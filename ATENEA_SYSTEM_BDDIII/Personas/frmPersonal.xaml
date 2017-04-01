@@ -1,0 +1,36 @@
+﻿<Window x:Class="ATENEA_SYSTEM_BDDIII.Personas.frmPesonal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="frmPesonal" Height="600" Width="400" Background="Transparent" AllowsTransparency="True" WindowStyle="None">
+    <Border CornerRadius="50" Background="#FF9182A1">
+        <Grid Margin="0,5,0,-5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80px" />
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Border Grid.Row="0" Background="Indigo" CornerRadius="50,50,0,0" MouseLeftButtonDown="Border_MouseLeftButtonDown" >
+                <Grid>
+                    <TextBlock Grid.Row="0" Text="REGISTRAR PERSONAL" TextAlignment="Left" Padding="10"
+                        FontFamily="Copperplate Gothic Light" FontSize="18" Foreground="White" Margin="10,10,-10,-10" ></TextBlock>
+
+                </Grid>
+
+            </Border>
+            <Image Source="/Imagenes/personal.png" Stretch="Fill" Width="100" Height="100"
+                           MouseLeftButtonDown="Image_MouseLeftButtonDown" ToolTip="Cerrar ventana"
+                           MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave"
+                           Name="imagenDelaVentana" RenderTransformOrigin="0.44,1.338" Margin="146,10,154,410" Grid.Row="1"/>
+            <TextBlock Margin="45,146,248,355" Grid.Row="1" Foreground="White" FontFamily="Copperplate Gothic Light" FontSize="16"><Run Text="Nombre:"/></TextBlock>
+            <TextBox Height="23" TextWrapping="Wrap" Text="TextBox" RenderTransformOrigin="1.303,2.602" Margin="244,146,36,348" Grid.Row="1"/>
+            <TextBlock Margin="45,200,203,301" Grid.Row="1" Foreground="White" FontFamily="Copperplate Gothic Light" FontSize="16"><Run Text="Primer Apellido:"/></TextBlock>
+            <TextBox Height="23" TextWrapping="Wrap" Text="TextBox" RenderTransformOrigin="1.303,2.602" Margin="244,197,36,297" Grid.Row="1"/>
+            <TextBlock Margin="45,253,248,248" Grid.Row="1" Foreground="White" FontFamily="Copperplate Gothic Light" FontSize="16"><Run Text="Login:"/></TextBlock>
+            <TextBox Height="23" TextWrapping="Wrap" Text="TextBox" RenderTransformOrigin="1.303,2.602" Margin="244,249,36,245" Grid.Row="1"/>
+            <TextBlock Margin="45,307,248,194" Grid.Row="1" Foreground="White" FontFamily="Copperplate Gothic Light" FontSize="16"><Run Text="Contraseña:"/></TextBlock>
+            <TextBox Height="23" TextWrapping="Wrap" Text="TextBox" RenderTransformOrigin="1.303,2.602" Margin="244,307,36,187" Grid.Row="1"/>
+            <TextBlock Margin="45,365,248,136" Grid.Row="1" Foreground="White" FontFamily="Copperplate Gothic Light" FontSize="16"><Run Text="Tipo Cargo:"/></TextBlock>
+            <ComboBox HorizontalAlignment="Left" Margin="244,358,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120"/>
+            <Button Name="btnRegistrarP" Content="Registrar" HorizontalAlignment="Left" Margin="30,438,0,0" Grid.Row="1" VerticalAlignment="Top" Width="334" RenderTransformOrigin="1,4.184"/>
+        </Grid>
+    </Border>
+</Window>

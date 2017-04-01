@@ -1,0 +1,15 @@
+﻿<Window x:Class="ATENEA_SYSTEM_BDDIII.Principal.Presentacion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Splash" Height="370" Width="650.597" BorderBrush="Transparent" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush/>
+    </Window.Background>
+    <Grid Height="370" Margin="5,0,32,0">
+        <Grid.Background>
+            <ImageBrush ImageSource="/ATENEA_SYSTEM_BDDIII;component/Imagenes/SplashOf.png" Stretch="Uniform"/>
+        </Grid.Background>
+        <ProgressBar x:Name="PBar" HorizontalAlignment="Left" Margin="203,254,0,0" VerticalAlignment="Top" Width="231" Height="28" ValueChanged="PBar_ValueChanged"/>
+
+    </Grid>
+</Window>
