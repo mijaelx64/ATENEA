@@ -6,42 +6,63 @@
         xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         Title="Menu" Height="638.059" Width="1015.045" WindowStartupLocation="CenterScreen">
     <Grid Margin="0,0,2,88" Background="Indigo">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="171*"/>
-            <RowDefinition Height="2*"/>
-        </Grid.RowDefinitions>
-        <Label Grid.Row="0" Margin="25" 
+
+        <DockPanel LastChildFill="True">
+
+            <StackPanel DockPanel.Dock="Top">
+                <Label Grid.Row="0" Margin="25" 
                HorizontalAlignment="Left" VerticalAlignment="Top"  >
-            <TextBlock TextWrapping="WrapWithOverflow"  FontFamily="Copperplate Gothic Light"
+                    <TextBlock TextWrapping="WrapWithOverflow"  FontFamily="Copperplate Gothic Light"
                        HorizontalAlignment="Center" Foreground="White" VerticalAlignment="Center" FontSize="16" RenderTransformOrigin="1.188,3.417">
                  BIENVENIDO/A
-            </TextBlock>
-        </Label>
-        <Controls:Tile Margin="47,130,742,46" Width="Auto" Height="Auto" Title="Productos" Click="Tile_Click">
-            <Image Source="/Imagenes/producto.png" Width="168" Height="180"></Image>
-        </Controls:Tile>
-        <Controls:Tile Margin="301,303,343,46" Width="Auto" Height="Auto" Title="Venta">
-            <Image Source="/Imagenes/venta.png" Width="168" Height="139"></Image>
-        </Controls:Tile>
-        <Controls:Tile Margin="301,130,545,228" Width="Auto" Height="Auto" Title="Clientes" Click="Tile_Click_2">
-            <Image Source="/Imagenes/cliente.png" Width="140" Height="120"></Image>
-        </Controls:Tile>
-        <Controls:Tile Margin="503,130,343,228" Width="Auto" Height="Auto" Title="Personal" Click="Tile_Click_1">
-            <Image Source="/Imagenes/personal.png" Width="130" Height="114" RenderTransformOrigin="0.562,0.5"></Image>
-        </Controls:Tile>
-        <Controls:Tile Margin="703,130,137,228" Width="Auto" Height="Auto" Title="Reportes" Click="Tile_Click_3">
-            <Image Source="/Imagenes/reporte1.png" Width="140" Height="94"></Image>
-        </Controls:Tile>
-        <Controls:Tile Margin="703,303,137,55" Width="Auto" Height="Auto" Title="Acerca de">
-            <Image Source="/Imagenes/acercade.png" Width="140" Height="120"></Image>
-        </Controls:Tile>
+                    </TextBlock>
+                </Label>
 
-        <Controls:Tile Margin="884,10,42,437.299" Width="Auto" Height="Auto" Title="" RenderTransformOrigin="2.309,0.461" Background="Transparent">
-            <Image Source="/Imagenes/mensaje.png" Width="57" Height="49" RenderTransformOrigin="-1.013,2.737"></Image>
-        </Controls:Tile>
-        <StatusBar HorizontalAlignment="Left" Background="Cyan" Height="72" Margin="3,16,0,-82" Grid.Row="1" VerticalAlignment="Top" Width="992">
-            <Label Name="lblfecha"></Label>
-        </StatusBar>
+                <Controls:Tile Width="Auto" Height="Auto" Title="" RenderTransformOrigin="2.309,0.461" Background="Transparent">
+                    <Image Source="/Imagenes/mensaje.png" Width="57" Height="49" RenderTransformOrigin="-1.013,2.737"></Image>
+                </Controls:Tile>
+
+            </StackPanel>
+
+            <StackPanel DockPanel.Dock="Bottom">
+                <StatusBar HorizontalAlignment="Left" Background="Cyan" Height="72" Margin="3,16,0,-82" VerticalAlignment="Top" Width="956">
+                    <Label Name="lblfecha"></Label>
+                </StatusBar>
+
+            </StackPanel>
+
+
+            <WrapPanel Orientation="Horizontal">
+
+                <Controls:Tile Width="Auto" Height="Auto" Title="Productos" Click="Tile_Click">
+                    <Image Source="/Imagenes/producto.png" Width="168" Height="180"></Image>
+                </Controls:Tile>
+                <Controls:Tile Width="Auto" Height="Auto" Title="Venta">
+                    <Image Source="/Imagenes/venta.png" Width="168" Height="139"></Image>
+                </Controls:Tile>
+                <Controls:Tile Width="Auto" Height="Auto" Title="Clientes" Click="Tile_Click_2">
+                    <Image Source="/Imagenes/cliente.png" Width="140" Height="120"></Image>
+                </Controls:Tile>
+                <Controls:Tile Width="Auto" Height="Auto" Title="Personal" Click="Tile_Click_1">
+                    <Image Source="/Imagenes/personal.png" Width="130" Height="114" RenderTransformOrigin="0.562,0.5"></Image>
+                </Controls:Tile>
+                <Controls:Tile Width="Auto" Height="Auto" Title="Reportes" Click="Tile_Click_3">
+                    <Image Source="/Imagenes/reporte1.png" Width="140" Height="94"></Image>
+                </Controls:Tile>
+                <Controls:Tile Width="Auto" Height="Auto" Title="Acerca de">
+                    <Image Source="/Imagenes/acercade.png" Width="140" Height="120"></Image>
+                </Controls:Tile>
+
+
+
+
+            </WrapPanel>
+
+
+        </DockPanel>
+
+
+
 
     </Grid>
 
